@@ -1,7 +1,7 @@
 import cv2
 
 # Ruta de la imagen en tu dispositivo
-ruta_imagen = r"C:\Users\usuario\Pictures\image.png"
+ruta_imagen = r"public/descarga.jpg"
 
 # Cargar la imagen
 imagen = cv2.imread(ruta_imagen)
@@ -16,7 +16,7 @@ height, width = imagen.shape[:2]
 
 # Añadir texto a la imagen
 texto = "Hola, OpenCV!"
-posicion = (50, height // 2)
+posicion = (2, height // 2)
 fuente = cv2.FONT_HERSHEY_SIMPLEX
 escala_fuente = 1
 color_texto = (255, 255, 256)  # Blanco en formato BGR

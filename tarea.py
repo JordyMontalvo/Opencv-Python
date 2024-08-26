@@ -1,5 +1,5 @@
 import cv2
-import os  
+import os
 
 # Limpia la pantalla
 os.system("cls")
@@ -25,6 +25,12 @@ while True:
     # Muestra la imagen capturada
     cv2.imshow('camara web', imagen)
 
+    # Presiona 's' para guardar la imagen
+    if cv2.waitKey(1) & 0xFF == ord('s'):
+        # Guarda la imagen capturada
+        cv2.imwrite('captura.png', imagen)
+        print("Imagen guardada como captura.png")
+
     # Presiona 'q' para salir del bucle
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
@@ -33,4 +39,4 @@ while True:
 muestra.release()
 cv2.destroyAllWindows()
 
-print("camara web")
+print("Cámara web cerrada.")

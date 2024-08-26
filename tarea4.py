@@ -1,7 +1,7 @@
 import cv2
 
 # Ruta de la imagen en tu dispositivo
-ruta_imagen = r"C:\Users\usuario\Pictures\image.png"
+ruta_imagen = r"public/descarga.jpg"
 
 # Cargar la imagen
 imagen = cv2.imread(ruta_imagen)
